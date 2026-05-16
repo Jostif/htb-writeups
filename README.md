@@ -13,8 +13,9 @@ Full walkthroughs with methodology, commands, and techniques.
 
 | Machine | Difficulty | Techniques | User | Root | Writeup |
 |---|---|---|---|---|---|
-| [Eighteen](./Eighteen/) | 🔴 Hard | CVE-2025-8110 (Gogs RCE), BadSuccessor, dMSA abuse | ✓ | ✓ | [→](./Eighteen/README.md) |
-| [TombWatcher](./TombWatcher/) | 🔴 Hard | Kerberoasting, gMSA, AddSelf, ForceChangePassword, WriteOwner, Deleted Object Restore, ESC15, Enrollment Agent | ✓ | ✓ | [→](./TombWatcher/README.md) |
+| [Eighteen](./Eighteen/) | 🟢 Easy | CVE-2025-8110 (Gogs RCE), BadSuccessor, dMSA abuse | ✓ | ✓ | [→](./Eighteen/README.md) |
+| [TombWatcher](./TombWatcher/) | 🟡 Medium | Kerberoasting, gMSA, AddSelf, ForceChangePassword, WriteOwner, Deleted Object Restore, ESC15, Enrollment Agent | ✓ | ✓ | [→](./TombWatcher/README.md) |
+| [Cicada](./Cicada/) | 🟢 Easy | SMB guest, Password Spray, Backup Operators, SeBackupPrivilege, secretsdump | ✓ | ✓ | [→](./Cicada/README.md) |
 | [EscapeTwo](./EscapeTwo/) | 🟢 Easy | ADCS ESC4→ESC1, MSSQL | ✓ | ✓ | [→](./EscapeTwo/README.md) |
 | [Support](./Support/) | 🟢 Easy | SMB, LDAP, Reverse Engineering, RBCD | ✓ | ✓ | [→](./Support/README.md) |
 | [Overwatch](./Overwatch/) | 🟡 Medium | SMB, WCF/SOAP Injection, DNS Poisoning, AD | ✓ | ✓ | [→](./Overwatch/README.md) |
@@ -38,7 +39,7 @@ Full walkthroughs with methodology, commands, and techniques.
 
 | Machine | Difficulty | Techniques |
 |---|---|---|
-| Logging | 🔴 Hard | Shadow Credentials, ADCS ESC1, DLL Hijack, WSUS |
+| Logging | 🟡 Medium | Shadow Credentials, ADCS ESC1, DLL Hijack, WSUS |
 | Garfield | 🔴 Hard | WriteDacl, RBCD, KeyList (RODC), SYSVOL |
 | Interpreter | 🟡 Medium | CVE-2023-43208, Deserialization, PBKDF2, eval() Injection |
 
@@ -61,7 +62,10 @@ Full walkthroughs with methodology, commands, and techniques.
 | ForceChangePassword | TombWatcher |
 | WriteOwner | TombWatcher |
 | Deleted object restore | TombWatcher |
-| SMB enumeration | Support, Timelapse, Overwatch |
+| SMB enumeration | Support, Timelapse, Overwatch, Cicada |
+| Password spray | Cicada |
+| Backup Operators / SeBackupPrivilege | Cicada |
+| secretsdump (offline hives) | Cicada |
 | LDAP enumeration | Support |
 | Reverse engineering (.NET) | Support |
 | RBCD | Support |
@@ -116,6 +120,6 @@ Every writeup follows the same structure:
 ## Author
 
 **J0stif** — penetration tester, bug bounty hunter
-OSCP (in progress) · HTB CPTS (in progress) · HTB CWES (in progress)
+PNPT · PWPA · CEH · OSCP (in progress) · HTB CPTS (in progress) · HTB CWES (in progress)
 
-[HTB Profile](https://app.hackthebox.com/profile/) · [Site & Writeups](https://jostif.pages.dev)
+[HTB Profile](https://app.hackthebox.com/users/2209690) · [Site & Writeups](https://jostif.pages.dev) · [Twitter/X](https://x.com/J0stif)
