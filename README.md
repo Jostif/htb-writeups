@@ -14,6 +14,7 @@ Full walkthroughs with methodology, commands, and techniques.
 | Machine | Difficulty | Techniques | User | Root | Writeup |
 |---|---|---|---|---|---|
 | [Eighteen](./Eighteen/) | 🔴 Hard | CVE-2025-8110 (Gogs RCE), BadSuccessor, dMSA abuse | ✓ | ✓ | [→](./Eighteen/README.md) |
+| [TombWatcher](./TombWatcher/) | 🟡 Medium | Kerberoasting, gMSA, AddSelf, ForceChangePassword, WriteOwner, Deleted Object Restore, ESC15, Enrollment Agent | ✓ | ✓ | [→](./TombWatcher/README.md) |
 | [EscapeTwo](./EscapeTwo/) | 🟢 Easy | ADCS ESC4→ESC1, MSSQL | ✓ | ✓ | [→](./EscapeTwo/README.md) |
 | [Support](./Support/) | 🟢 Easy | SMB, LDAP, Reverse Engineering, RBCD | ✓ | ✓ | [→](./Support/README.md) |
 | [Overwatch](./Overwatch/) | 🟡 Medium | SMB, WCF/SOAP Injection, DNS Poisoning, AD | ✓ | ✓ | [→](./Overwatch/README.md) |
@@ -49,9 +50,17 @@ Full walkthroughs with methodology, commands, and techniques.
 |---|---|
 | ADCS / ESC1 | EscapeTwo |
 | ADCS / ESC4 | EscapeTwo |
+| ADCS / ESC15 (CVE-2024-49019) | TombWatcher |
+| Enrollment Agent abuse (ESC3) | TombWatcher |
 | BadSuccessor / dMSA | Eighteen |
-| CVE exploitation | Eighteen (CVE-2025-8110) |
+| CVE exploitation | Eighteen (CVE-2025-8110), TombWatcher (CVE-2024-49019) |
 | Gogs RCE | Eighteen |
+| Kerberoasting | TombWatcher |
+| gMSA password dump | TombWatcher |
+| AddSelf ACE abuse | TombWatcher |
+| ForceChangePassword | TombWatcher |
+| WriteOwner | TombWatcher |
+| Deleted object restore | TombWatcher |
 | SMB enumeration | Support, Timelapse, Overwatch |
 | LDAP enumeration | Support |
 | Reverse engineering (.NET) | Support |
@@ -109,4 +118,4 @@ Every writeup follows the same structure:
 **J0stif** — penetration tester, bug bounty hunter
 OSCP (in progress) · HTB CPTS (in progress) · HTB CWES (in progress)
 
-[HTB Profile](https://app.hackthebox.com/profile/) · [Site & Writeups](https://jostif.pages.dev)
+[HTB Profile](https://app.hackthebox.com/users/2209690) · [Site & Writeups](https://jostif.pages.dev)
