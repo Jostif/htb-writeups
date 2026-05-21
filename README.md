@@ -33,6 +33,7 @@ Full walkthroughs with methodology, commands, and techniques.
 | Machine | Difficulty | Techniques | User | Root | Writeup |
 |---|---|---|---|---|---|
 | [Browsed](./Browsed/) | 🟡 Medium | Chrome Extension, Bash Arithmetic Injection, SSRF, pyc Hijack | ✓ | ✓ | [→](./Browsed/README.md) |
+| [Sea](./Sea/) | 🟢 Easy | CVE-2023-41425 (WonderCMS XSS→RCE), bcrypt crack, command injection, SUID bash | ✓ | ✓ | [→](./Sea/README.md) |
 
 ---
 
@@ -55,7 +56,12 @@ Full walkthroughs with methodology, commands, and techniques.
 | ADCS / ESC15 (CVE-2024-49019) | TombWatcher |
 | Enrollment Agent abuse (ESC3) | TombWatcher |
 | BadSuccessor / dMSA | Eighteen |
-| CVE exploitation | Eighteen (CVE-2025-8110), TombWatcher (CVE-2024-49019) |
+| CVE exploitation | Eighteen (CVE-2025-8110), TombWatcher (CVE-2024-49019), Sea (CVE-2023-41425) |
+| WonderCMS XSS → RCE | Sea |
+| bcrypt cracking | Sea |
+| Command injection (newline) | Sea |
+| SUID bash | Sea |
+| Internal service port forward | Sea |
 | Gogs RCE | Eighteen |
 | Kerberoasting | TombWatcher |
 | AS-REP Roasting | TombWatcher, Sauna |
