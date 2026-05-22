@@ -20,6 +20,7 @@ Full walkthroughs with methodology, commands, and techniques.
 | [EscapeTwo](./EscapeTwo/) | 🟢 Easy | ADCS ESC4→ESC1, MSSQL | ✓ | ✓ | [→](./EscapeTwo/README.md) |
 | [Support](./Support/) | 🟢 Easy | SMB, LDAP, Reverse Engineering, RBCD | ✓ | ✓ | [→](./Support/README.md) |
 | [Overwatch](./Overwatch/) | 🟡 Medium | SMB, WCF/SOAP Injection, DNS Poisoning, AD | ✓ | ✓ | [→](./Overwatch/README.md) |
+| [Escape](./Escape/) | 🟡 Medium | MSSQL xp_dirtree, NTLM coercion, ERRORLOG cred leak, ADCS ESC1 | ✓ | ✓ | [→](./Escape/README.md) |
 
 ### Windows — Standalone
 
@@ -83,7 +84,10 @@ Full walkthroughs with methodology, commands, and techniques.
 | LAPS | Timelapse |
 | PFX cracking | Timelapse |
 | LFI | Unika |
-| NTLMv2 / Responder | Unika, Overwatch |
+| MSSQL xp_dirtree NTLM coercion | Escape |
+| NTLM capture (Responder) | Unika, Overwatch, Escape |
+| ADCS / ESC1 | EscapeTwo, Escape |
+| Password in log files | Escape |
 | WCF / SOAP injection | Overwatch |
 | DNS poisoning | Overwatch |
 | Chrome extension abuse | Browsed |
