@@ -14,6 +14,7 @@ Full walkthroughs with methodology, commands, and techniques.
 | Machine | Difficulty | Techniques | User | Root | Writeup |
 |---|---|---|---|---|---|
 | [Eighteen](./Eighteen/) | 🟢 Easy | CVE-2025-8110 (Gogs RCE), BadSuccessor, dMSA abuse | ✓ | ✓ | [→](./Eighteen/README.md) |
+| [Blackfield](./Blackfield/) | 🔴 Hard | AS-REP Roasting, ForceChangePassword, lsass dump, SeBackupPrivilege, NTDS.dit | ✓ | ✓ | [→](./Blackfield/README.md) |
 | [TombWatcher](./TombWatcher/) | 🟡 Medium | Kerberoasting, gMSA, AddSelf, ForceChangePassword, WriteOwner, Deleted Object Restore, ESC15, Enrollment Agent | ✓ | ✓ | [→](./TombWatcher/README.md) |
 | [Cicada](./Cicada/) | 🟢 Easy | SMB guest, Password Spray, Backup Operators, SeBackupPrivilege, secretsdump | ✓ | ✓ | [→](./Cicada/README.md) |
 | [Sauna](./Sauna/) | 🟢 Easy | OSINT, Username Generation, AS-REP Roasting, AutoLogon creds, DCSync | ✓ | ✓ | [→](./Sauna/README.md) |
@@ -28,6 +29,7 @@ Full walkthroughs with methodology, commands, and techniques.
 |---|---|---|---|---|---|
 | [Unika](./Unika/) | 🟢 Easy | LFI, NTLMv2, Hashcat | ✓ | ✓ | [→](./Unika/README.md) |
 | [Timelapse](./Timelapse/) | 🟢 Easy | SMB, PFX, LAPS | ✓ | ✓ | [→](./Timelapse/README.md) |
+| [ServMon](./ServMon/) | 🟢 Easy | Anonymous FTP, CVE-2019-20085 (NVMS traversal), NSClient++ API abuse | ✓ | ✓ | [→](./ServMon/README.md) |
 
 ### Linux
 
@@ -65,7 +67,14 @@ Full walkthroughs with methodology, commands, and techniques.
 | Internal service port forward | Sea |
 | Gogs RCE | Eighteen |
 | Kerberoasting | TombWatcher |
-| AS-REP Roasting | TombWatcher, Sauna |
+| AS-REP Roasting | TombWatcher, Sauna, Blackfield |
+| ForceChangePassword | TombWatcher, Blackfield |
+| lsass memory dump (pypykatz) | Blackfield |
+| diskshadow + NTDS.dit extraction | Blackfield |
+| Anonymous FTP credential leak | ServMon |
+| Path traversal CVE | ServMon (CVE-2019-20085), Sea (CVE-2023-41425) |
+| NSClient++ API abuse | ServMon |
+| SSH port forwarding (privesc) | ServMon |
 | DCSync (GetChangesAll) | Sauna |
 | OSINT / username generation | Sauna |
 | AutoLogon registry credentials | Sauna |
