@@ -15,9 +15,12 @@ Full walkthroughs with methodology, commands, and techniques.
 |---|---|---|---|---|---|
 | [Eighteen](./Eighteen/) | 🟢 Easy | CVE-2025-8110 (Gogs RCE), BadSuccessor, dMSA abuse | ✓ | ✓ | [→](./Eighteen/README.md) |
 | [Blackfield](./Blackfield/) | 🔴 Hard | AS-REP Roasting, ForceChangePassword, lsass dump, SeBackupPrivilege, NTDS.dit | ✓ | ✓ | [→](./Blackfield/README.md) |
+| [Flight](./Flight/) | 🔴 Hard | vhost fuzzing, LFI→NTLM, desktop.ini NTLM, PHP webshell, RunasCs, chisel, GodPotato | ✓ | ✓ | [→](./Flight/README.md) |
 | [TombWatcher](./TombWatcher/) | 🟡 Medium | Kerberoasting, gMSA, AddSelf, ForceChangePassword, WriteOwner, Deleted Object Restore, ESC15, Enrollment Agent | ✓ | ✓ | [→](./TombWatcher/README.md) |
 | [Cicada](./Cicada/) | 🟢 Easy | SMB guest, Password Spray, Backup Operators, SeBackupPrivilege, secretsdump | ✓ | ✓ | [→](./Cicada/README.md) |
 | [Sauna](./Sauna/) | 🟢 Easy | OSINT, Username Generation, AS-REP Roasting, AutoLogon creds, DCSync | ✓ | ✓ | [→](./Sauna/README.md) |
+| [Forest](./Forest/) | 🟢 Easy | AS-REP Roasting, BloodHound, WriteDACL, Exchange Windows Permissions, DCSync | ✓ | ✓ | [→](./Forest/README.md) |
+| [Active](./Active/) | 🟢 Easy | GPP cpassword, gpp-decrypt, Kerberoasting, psexec | ✓ | ✓ | [→](./Active/README.md) |
 | [EscapeTwo](./EscapeTwo/) | 🟢 Easy | ADCS ESC4→ESC1, MSSQL | ✓ | ✓ | [→](./EscapeTwo/README.md) |
 | [Support](./Support/) | 🟢 Easy | SMB, LDAP, Reverse Engineering, RBCD | ✓ | ✓ | [→](./Support/README.md) |
 | [Overwatch](./Overwatch/) | 🟡 Medium | SMB, WCF/SOAP Injection, DNS Poisoning, AD | ✓ | ✓ | [→](./Overwatch/README.md) |
@@ -93,7 +96,17 @@ Full walkthroughs with methodology, commands, and techniques.
 | LAPS | Timelapse |
 | PFX cracking | Timelapse |
 | LFI | Unika |
-| MSSQL xp_dirtree NTLM coercion | Escape |
+| GPP cpassword (MS14-025) | Active |
+| gpp-decrypt | Active |
+| WriteDACL → DCSync | Forest |
+| Exchange Windows Permissions abuse | Forest |
+| Virtual host fuzzing | Flight |
+| LFI → UNC → NTLM capture | Flight |
+| desktop.ini NTLM capture | Flight |
+| RunasCs lateral movement | Flight |
+| chisel port forwarding | Flight |
+| GodPotato SeImpersonate | Flight |
+| ASPX webshell (IIS) | Flight |
 | NTLM capture (Responder) | Unika, Overwatch, Escape |
 | ADCS / ESC1 | EscapeTwo, Escape |
 | Password in log files | Escape |
