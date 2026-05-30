@@ -41,6 +41,7 @@ Full walkthroughs with methodology, commands, and techniques.
 |---|---|---|---|---|---|
 | [Browsed](./Browsed/) | 🟡 Medium | Chrome Extension, Bash Arithmetic Injection, SSRF, pyc Hijack | ✓ | ✓ | [→](./Browsed/README.md) |
 | [Sea](./Sea/) | 🟢 Easy | CVE-2023-41425 (WonderCMS XSS→RCE), bcrypt crack, command injection, SUID bash | ✓ | ✓ | [→](./Sea/README.md) |
+| [Nibbles](./Nibbles/) | 🟢 Easy | CVE-2015-6967 (Nibbleblog file upload RCE), sudo writable script | ✓ | ✓ | [→](./Nibbles/README.md) |
 
 ---
 
@@ -75,7 +76,9 @@ Full walkthroughs with methodology, commands, and techniques.
 | ForceChangePassword | TombWatcher, Blackfield |
 | lsass memory dump (pypykatz) | Blackfield |
 | diskshadow + NTDS.dit extraction | Blackfield |
-| Anonymous FTP credential leak | ServMon |
+| sudo writable script | Nibbles |
+| Nibbleblog file upload RCE | Nibbles |
+| Context-based credential guessing | Nibbles, Sauna |
 | Path traversal CVE | ServMon (CVE-2019-20085), Sea (CVE-2023-41425) |
 | NSClient++ API abuse | ServMon |
 | SSH port forwarding (privesc) | ServMon |
